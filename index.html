@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="img/logoEncriptador.png" alt="">
+        <h1>Decodificador de Texto</h1>
+        <div class="botaoCor">
+         <input type="checkbox" id="chk" />
+          <label for="chk" class="mudarCor">
+            <span class="deslizar"></span>
+          </label>
+        </div>
+    </header>
+
+    <main>
+        <section class="caixaEsquerda">
+            <textarea placeholder="Digite seu texto" id="entradaTexto"></textarea>
+            <div class="aviso">
+                <img id="avisoImg" src="img/avisoBranco.png" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+                <div class="botoes">
+                    <button onclick="criptografar()" id="criptografar">
+                        <img src="img/cadeadoFechado.png" alt="">
+                        Criptografar</button>
+                    <button onclick="descriptografar()" id="descriptografar">
+                        <img src="img/cadeadoAberto.png" alt="">
+                        Descriptografar</button>
+                </div> 
+        </section>
+
+        <section id="caixaDireita">
+            
+            <img  src="img/imagemDireita.png" alt="">
+
+            <h4>Nenhuma mensagem encontrada</h4>
+
+            <p>Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="rodape">
+        <h3>Alura ONE Turma 7 - 2024</h3>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
