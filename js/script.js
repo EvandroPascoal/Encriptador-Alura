@@ -37,6 +37,8 @@ checkbox.addEventListener('change', function() {
 
 
 function criptografar() {
+
+    
     var texto = textInput.value;
 
     if (texto.trim() !== "") { // Verifica se o texto não está vazio
